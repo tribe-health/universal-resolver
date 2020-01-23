@@ -14,7 +14,7 @@ After every code change the CI/CD pipeline builds all software packages/Docker c
 
 ## Building Blocks
 
-The CI/CD pipeline is constructed by using GitHub Actions. The workflow (workflow file https://github.com/philpotisk/universal-resolver/blob/master/.github/workflows/universal-resolver-ws.yml ) is run after every push to the master and on ever PR against master.
+The CI/CD pipeline is constructed by using GitHub Actions. The workflow (workflow file https://github.com/philpotisk/universal-resolver/blob/master/.github/workflows/universal-resolver-ws.yml ) is run after every push to the master and on every PR against master.
 The workflow consists of several steps. Each step is implemented as Docker container that performs the relevant actions. Currently, the two main steps are: 
 
 1. Building the resolver

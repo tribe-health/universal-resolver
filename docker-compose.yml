@@ -79,3 +79,11 @@ services:
     image: universalresolver/uni-resolver-web:latest
     ports:
       - "8080:8080"
+  didcomm-interface:
+    image: universalresolver/didcomm:latest
+    environment:
+      public_domain: ${uniresolver_didcomm_public_domain}
+      did_resolution_service: ${uniresolver_didcomm_did_resolution_service}
+    ports:
+      - "8180:8080"
+      - "8181:8081"
